@@ -23,3 +23,12 @@ fn test_mutable() {
     name = "Rahman";
     println!("Hello, {}!", name);
 }
+
+#[test]
+fn static_typing() {
+    let name = "Aditya";
+    println!("Hello, {}!", name);
+
+    // name = 10;
+    println!("Hello, {}!", name);
+}
