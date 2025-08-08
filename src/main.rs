@@ -107,3 +107,26 @@ fn augmented_assignment() {
     a -= 10;
     println!("{}", a);
 }
+
+#[test]
+fn boolean() {
+    let a = true;
+    let b: bool = false;
+
+    println!("{} {}", a, b);
+}
+
+#[test]
+fn comparison_operators() {
+    let result: bool = 20 >= 20;
+    println!("{}", result);
+}
+
+#[test]
+fn boolean_operators() {
+    let a = true;
+    let b = false;
+
+    let result = a && b;
+    println!("{}", result);
+}
