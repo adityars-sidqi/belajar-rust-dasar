@@ -52,3 +52,58 @@ fn comment() {
     // ini komentar
     println!("Hello"); //ini komentar lagi
 }
+
+#[test]
+fn explicit() {
+    let age : i32 = 20;
+    println!("{}", age);
+}
+
+#[test]
+fn number() {
+    let a : i32 = 10;
+    println!("{}", a);
+
+    let b: f64 = 10.5;
+    println!("{}", b);
+}
+
+#[test]
+fn number_conversion() {
+    let a: i8 = 10;
+    println!("{}", a);
+
+    let b: i16 = a as i16;
+    println!("{}", b);
+
+    let c: i32 = b as i32;
+    println!("{}", c);
+
+    let d: i64 = 1000000000;
+    let e: i8 = d as i8;
+    println!("{}", e);
+}
+
+#[test]
+fn numeric_operator() {
+    let a = 10;
+    let b = 10;
+    let c = a * b;
+    println!("{}", c);
+    let d = a / b;
+    println!("{}", d);
+    let e = a + b;
+    println!("{}", e);
+}
+
+#[test]
+fn augmented_assignment() {
+    let mut a = 10;
+    println!("{}", a);
+
+    a += 10;
+    println!("{}", a);
+
+    a -= 10;
+    println!("{}", a);
+}
